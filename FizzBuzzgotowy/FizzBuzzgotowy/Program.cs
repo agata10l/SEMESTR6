@@ -20,17 +20,19 @@ namespace FizzBuzzgotowy
             {
 
 
-                    if (number % 7 == 0)
+                if (number % 7 == 0)
                     results.Add("Buzzinga");
-                    else if (number % 15 == 0)
-                        results.Add("FizzBuzz");
-                    else if (number % 5 == 0 && number % 3 != 0)
-                        results.Add("Buzz");
-                    else if (number % 3 == 0 && number % 5 != 0)
-                        results.Add("Fizz");
-                    else
-                        results.Add(number.ToString());
-                
+                else if (number % 15 == 0 || number.ToString().Contains("53") || number.ToString().Contains("35"))
+                {
+                    results.Add("FizzBuzz");
+                }
+                else if (number % 5 == 0 && number % 3 != 0)
+                    results.Add("Buzz");
+                else if (number % 3 == 0 && number % 5 != 0)
+                    results.Add("Fizz");
+                else
+                    results.Add(number.ToString());
+
             }
             return results;
         }

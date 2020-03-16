@@ -45,8 +45,8 @@ namespace Testgotowy
         [Test]
         public void SimpleFizzBuzzTest()
         {
-            List<int> numbers = new List<int>() { 1, 15 };
-            List<string> expectedResults = new List<string>() { "1", "FizzBuzz" };
+            List<int> numbers = new List<int>() { 1, 15, 538, 352, 36753, 9354 };
+            List<string> expectedResults = new List<string>() { "1", "FizzBuzz", "FizzBuzz", "FizzBuzz", "FizzBuzz", "FizzBuzz" };
             var actualResluts = FizzBuzzer.MillNumbers(numbers);
             CollectionAssert.AreEqual(expectedResults, actualResluts);
         }

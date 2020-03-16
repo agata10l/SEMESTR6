@@ -20,9 +20,9 @@ namespace FizzBuzzgotowy
             {
                 if (number % 15 == 0)
                     results.Add("FizzBuzz");
-                else if (number % 5 == 0)
+                else if (number % 5 == 0 && number % 3 != 0)
                     results.Add("Buzz");
-                else if(number % 3 == 0)
+                else if(number % 3 == 0 && number % 5 != 0)
                     results.Add("Fizz");
                 else 
                     results.Add(number.ToString());

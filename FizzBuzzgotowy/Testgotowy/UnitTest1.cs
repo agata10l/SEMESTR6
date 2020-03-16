@@ -18,17 +18,17 @@ namespace Testgotowy
         [Test]
         public void SimpleFizzSingleTest()
         {
-            List<int> numbers = new List<int>() { 3 };
-            List<string> expectedResults = new List<string>() { "Fizz" };
+            List<int> numbers = new List<int>() { 3, 13 };
+            List<string> expectedResults = new List<string>() { "Fizz", "13" };
             var actualResults = FizzBuzzer.MillNumbers(numbers);
-            Assert.AreEqual(expectedResults[0], actualResults[0]);
+            CollectionAssert.AreEqual(expectedResults[0], actualResults[0]);
         }
 
         [Test]
         public void SimpleBuzzTest()
         {
-            List<int> numbers = new List<int>() { 1, 5, 10 };
-            List<string> expectedResults = new List<string>() { "1", "Buzz", "Buzz" };
+            List<int> numbers = new List<int>() { 1, 5, 10, 51 };
+            List<string> expectedResults = new List<string>() { "1", "Buzz", "Buzz", "Buzz" };
             var actualResluts = FizzBuzzer.MillNumbers(numbers);
             CollectionAssert.AreEqual(expectedResults, actualResluts);
         }
